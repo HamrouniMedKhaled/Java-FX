@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="209.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bonplan.gui.BagdeDetailController">
+   <children>
+      <Label fx:id="badgeName" layoutX="181.0" layoutY="37.0" prefHeight="49.0" prefWidth="239.0" />
+      <Label layoutX="40.0" layoutY="107.0" prefHeight="28.0" prefWidth="344.0" text="Nombre de commentaires neccéssaires pour le débloquer :" />
+      <Label fx:id="action_count" layoutX="409.0" layoutY="107.0" prefHeight="28.0" prefWidth="61.0" />
+   </children>
+</AnchorPane>

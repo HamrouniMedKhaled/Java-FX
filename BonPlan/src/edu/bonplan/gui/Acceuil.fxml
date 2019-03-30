@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bonplan.gui.AcceuilController">
+   <children>
+      <MenuBar layoutX="10.0" layoutY="10.0" prefHeight="78.0" prefWidth="782.0" style="-fx-background-color: Blue;">
+         <menus>
+            <Menu fx:id="connexion" mnemonicParsing="false" onAction="#connexion">
+               <graphic>
+                  <Button fx:id="cc" mnemonicParsing="false" onAction="#connexion" style="-fx-background-color: Blue;" text="Connexion" textFill="#ffffffbf" />
+               </graphic></Menu>
+            <Menu fx:id="inscription" mnemonicParsing="false" onAction="#inscription">
+               <graphic>
+                  <Button fx:id="ii" mnemonicParsing="false" onAction="#inscription" style="-fx-background-color: Blue;" text="Inscription" textFill="WHITE" />
+               </graphic></Menu>
+            <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout">
+               <graphic>
+                  <Button fx:id="dc" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: Blue;" text="Deconnexion" textFill="WHITE" />
+               </graphic></Menu>
+            <Menu fx:id="acceuil" mnemonicParsing="false" onAction="#acceuil">
+               <graphic>
+                  <Button fx:id="aa" mnemonicParsing="false" onAction="#acceuil" style="-fx-background-color: blue;" text="Acceuil" textFill="WHITE" />
+               </graphic></Menu>
+            <Menu fx:id="plan" mnemonicParsing="false" onAction="#afficherplan">
+               <graphic>
+                  <Button fx:id="pp" mnemonicParsing="false" onAction="#afficherplan" style="-fx-background-color: Blue;" text="Plan" textFill="WHITE" />
+               </graphic></Menu>
+            <Menu fx:id="deal" mnemonicParsing="false" onAction="#afficherdeal">
+               <graphic>
+                  <Button fx:id="dd" mnemonicParsing="false" onAction="#afficherdeal" style="-fx-background-color: Blue;" text="Deal" textFill="WHITE" />
+               </graphic></Menu>
+            <Menu fx:id="afficherenseigne" mnemonicParsing="false" onAction="#afficherEnseigne">
+               <graphic>
+                  <Button fx:id="enseigne" mnemonicParsing="false" onAction="#afficherEnseigne" style="-fx-background-color: Blue;" text="Enseigne" textFill="#ffffffbf" />
+               </graphic>
+            </Menu>
+            <Menu fx:id="Reservation" mnemonicParsing="false" onAction="#reservation">
+               <graphic>
+                  <Button fx:id="rr" mnemonicParsing="false" onAction="#reservation" style="-fx-background-color: Blue;" text="Reservation" textFill="#ffffffbf" />
+               </graphic>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ImageView fx:id="b1" fitHeight="311.0" fitWidth="782.0" layoutX="10.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0">
+         <image>
+            <Image url="@../../../../../Projet_pidev/web/uploads/images/aceuil.png" />
+         </image>
+         <effect>
+            <Reflection bottomOpacity="0.63" fraction="0.62" topOpacity="0.32" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

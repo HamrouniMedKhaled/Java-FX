@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bonplan.gui.Enseigne.ReadEnseigne">
+   <children>
+      <BorderPane prefHeight="557.0" prefWidth="753.0">
+         <top>
+            <MenuBar prefHeight="114.0" prefWidth="802.0" style="-fx-background-color: Blue;" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout">
+                     <graphic>
+                        <Button fx:id="dc" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: Blue;" text="Deconnexion" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="acceuil" mnemonicParsing="false" onAction="#acceuil">
+                     <graphic>
+                        <Button fx:id="aa" mnemonicParsing="false" onAction="#acceuil" style="-fx-background-color: blue;" text="Acceuil" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="plan" mnemonicParsing="false" onAction="#afficherplan">
+                     <graphic>
+                        <Button fx:id="pp" mnemonicParsing="false" onAction="#afficherplan" style="-fx-background-color: Blue;" text="Plan" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="deal" mnemonicParsing="false" onAction="#afficherdeal">
+                     <graphic>
+                        <Button fx:id="ddd" mnemonicParsing="false" onAction="#afficherdeal" style="-fx-background-color: Blue;" text="Deal" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="enseigne" mnemonicParsing="false" onAction="#afficherEnseigne">
+                     <graphic>
+                        <Button fx:id="cc1" mnemonicParsing="false" onAction="#afficherEnseigne" style="-fx-background-color: Blue;" text="Enseigne" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="Reservation" mnemonicParsing="false" onAction="#reservation">
+                     <graphic>
+                        <Button fx:id="rr" mnemonicParsing="false" onAction="#reservation" style="-fx-background-color: Blue;" text="Reservation" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane prefHeight="432.0" prefWidth="664.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="207.0" layoutY="38.0" prefHeight="29.0" prefWidth="186.0" text="Enseigne" textFill="#bc1a1a">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="98.0" prefHeight="16.0" prefWidth="52.0" text="Nom :" />
+                  <Label layoutX="38.0" layoutY="147.0" text="Description :" />
+                  <Label layoutX="38.0" layoutY="192.0" text="Active :" />
+                  <Label layoutX="38.0" layoutY="231.0" text="Capacite :" />
+                  <Label layoutX="35.0" layoutY="277.0" text="Categorie :" />
+                  <Separator layoutX="297.0" layoutY="79.0" orientation="VERTICAL" prefHeight="259.0" prefWidth="5.0" />
+                  <Label layoutX="400.0" layoutY="96.0" prefHeight="16.0" prefWidth="73.0" text="Addresse" textFill="#a19d9d">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="324.0" layoutY="147.0" text="Pays :" />
+                  <Label layoutX="321.0" layoutY="192.0" text="Ville :" />
+                  <Label layoutX="321.0" layoutY="231.0" text="Rue :" />
+                  <Label layoutX="319.0" layoutY="277.0" text="Code Postale :" />
+                  <Label fx:id="descriptionField" layoutX="129.0" layoutY="147.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="villeField" layoutX="400.0" layoutY="192.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="categorieField" layoutX="122.0" layoutY="277.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="capaciteField" layoutX="129.0" layoutY="231.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="activeField" layoutX="129.0" layoutY="192.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="rueField" layoutX="400.0" layoutY="231.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="codepostaleField" layoutX="411.0" layoutY="277.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="payField" layoutX="400.0" layoutY="147.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Label fx:id="nomField" layoutX="90.0" layoutY="98.0" prefHeight="16.0" prefWidth="171.0" />
+                  <Button fx:id="ajoutdeal" layoutX="671.0" layoutY="375.0" mnemonicParsing="false" onAction="#AjouterDeal" prefHeight="25.0" prefWidth="85.0" text="Ajouter Deal" />
+                  <Separator layoutX="556.0" layoutY="79.0" orientation="VERTICAL" prefHeight="259.0" prefWidth="5.0" />
+                  <Label layoutX="648.0" layoutY="96.0" prefHeight="16.0" prefWidth="73.0" text="Image" textFill="#a19d9d">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgVw" fitHeight="202.0" fitWidth="200.0" layoutX="571.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="ajoutres" layoutX="523.0" layoutY="375.0" mnemonicParsing="false" onAction="#AjouterResrvation" prefHeight="25.0" prefWidth="125.0" text="Ajouter Reservation" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

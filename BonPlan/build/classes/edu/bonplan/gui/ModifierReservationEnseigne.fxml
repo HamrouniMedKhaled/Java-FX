@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bonplan.gui.ModifierReservationEnseigneController">
+   <children>
+      <BorderPane prefHeight="557.0" prefWidth="753.0">
+         <top>
+            <MenuBar prefHeight="114.0" prefWidth="802.0" style="-fx-background-color: Blue;" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout">
+                     <graphic>
+                        <Button fx:id="dc" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: Blue;" text="Deconnexion" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="acceuil" mnemonicParsing="false" onAction="#acceuil">
+                     <graphic>
+                        <Button fx:id="aa" mnemonicParsing="false" onAction="#acceuil" style="-fx-background-color: blue;" text="Acceuil" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="plan" mnemonicParsing="false" onAction="#afficherplan">
+                     <graphic>
+                        <Button fx:id="pp" mnemonicParsing="false" onAction="#afficherplan" style="-fx-background-color: Blue;" text="Plan" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="deal" mnemonicParsing="false" onAction="#afficherdeal">
+                     <graphic>
+                        <Button fx:id="ddd" mnemonicParsing="false" onAction="#afficherdeal" style="-fx-background-color: Blue;" text="Deal" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="enseigne" mnemonicParsing="false" onAction="#afficherEnseigne">
+                     <graphic>
+                        <Button fx:id="cc1" mnemonicParsing="false" onAction="#afficherEnseigne" style="-fx-background-color: Blue;" text="Enseigne" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="Reservation" mnemonicParsing="false" onAction="#reservation">
+                     <graphic>
+                        <Button fx:id="rr" mnemonicParsing="false" onAction="#reservation" style="-fx-background-color: Blue;" text="Reservation" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="138.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text fill="#dd1e1e" layoutX="211.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier votre Reservation " textAlignment="CENTER">
+               <font>
+                  <Font name="ACS  Almass" size="16.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="date_reservation_Enseigne" layoutX="123.0" layoutY="148.0" />
+            <Text fill="#475bda" layoutX="123.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date De reservation" />
+            <Text fill="#475bda" layoutX="128.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre De Place " />
+            <TextField fx:id="nbrePlace" layoutX="118.0" layoutY="235.0" />
+            <Button fx:id="modifier_reservation" layoutX="370.0" layoutY="335.0" mnemonicParsing="false" onAction="#ModifierReservationEnseigne" text="Modifier" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

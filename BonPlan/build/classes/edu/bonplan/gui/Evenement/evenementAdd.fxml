@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bonplan.gui.Evenement.EvenementAdd">
+   <children>
+      <BorderPane prefHeight="557.0" prefWidth="753.0">
+         <top>
+            <MenuBar prefHeight="114.0" prefWidth="802.0" style="-fx-background-color: Blue;" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout">
+                     <graphic>
+                        <Button fx:id="dc" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: Blue;" text="Deconnexion" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="acceuil" mnemonicParsing="false" onAction="#acceuil">
+                     <graphic>
+                        <Button fx:id="aa" mnemonicParsing="false" onAction="#acceuil" style="-fx-background-color: blue;" text="Acceuil" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="plan" mnemonicParsing="false" onAction="#afficherplan">
+                     <graphic>
+                        <Button fx:id="pp" mnemonicParsing="false" onAction="#afficherplan" style="-fx-background-color: Blue;" text="Plan" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="deal" mnemonicParsing="false" onAction="#afficherdeal">
+                     <graphic>
+                        <Button fx:id="ddd" mnemonicParsing="false" onAction="#afficherdeal" style="-fx-background-color: Blue;" text="Deal" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="enseigne" mnemonicParsing="false" onAction="#afficherEnseigne">
+                     <graphic>
+                        <Button fx:id="cc1" mnemonicParsing="false" onAction="#afficherEnseigne" style="-fx-background-color: Blue;" text="Enseigne" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="Reservation" mnemonicParsing="false" onAction="#reservation">
+                     <graphic>
+                        <Button fx:id="rr" mnemonicParsing="false" onAction="#reservation" style="-fx-background-color: Blue;" text="Reservation" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane prefHeight="502.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="34.0" layoutY="103.0" prefHeight="16.0" prefWidth="92.0" text="Nom">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="34.0" layoutY="170.0" prefHeight="18.0" prefWidth="81.0" text="Description">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="34.0" layoutY="229.0" prefHeight="18.0" prefWidth="81.0" text="Enseigne :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="234.0" layoutY="51.0" prefHeight="34.0" prefWidth="200.0" text="Ajout Evenement" textAlignment="CENTER" textFill="#eb1919">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nom" layoutX="195.0" layoutY="99.0" />
+                  <TextField fx:id="description" layoutX="195.0" layoutY="166.0" />
+                  <ChoiceBox fx:id="Enseigne" layoutX="195.0" layoutY="225.0" prefHeight="26.0" prefWidth="149.0" />
+                  <Label layoutX="34.0" layoutY="341.0" text="Image :" />
+                  <Button fx:id="save" layoutX="664.0" layoutY="462.0" mnemonicParsing="false" text="Enregistrer" />
+                  <Label layoutX="34.0" layoutY="288.0" prefHeight="16.0" prefWidth="58.0" text="Date :" />
+                  <DatePicker fx:id="datep" layoutX="195.0" layoutY="275.0" prefHeight="26.0" prefWidth="150.0" />
+                  <Button layoutX="395.0" layoutY="394.0" mnemonicParsing="false" onAction="#importBtn" prefHeight="26.0" prefWidth="132.0" text="choose image" />
+                  <ImageView fx:id="imgVw" fitHeight="150.0" fitWidth="200.0" layoutX="181.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bonplan.gui.ModifierDealController">
+   <children>
+      <BorderPane prefHeight="557.0" prefWidth="753.0">
+         <top>
+            <MenuBar prefHeight="114.0" prefWidth="802.0" style="-fx-background-color: Blue;" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu fx:id="logout" mnemonicParsing="false" onAction="#logout">
+                     <graphic>
+                        <Button fx:id="dc" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: Blue;" text="Deconnexion" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="acceuil" mnemonicParsing="false" onAction="#acceuil">
+                     <graphic>
+                        <Button fx:id="aa" mnemonicParsing="false" onAction="#acceuil" style="-fx-background-color: blue;" text="Acceuil" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="plan" mnemonicParsing="false" onAction="#afficherplan">
+                     <graphic>
+                        <Button fx:id="pp" mnemonicParsing="false" onAction="#afficherplan" style="-fx-background-color: Blue;" text="Plan" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="deal" mnemonicParsing="false" onAction="#afficherdeal">
+                     <graphic>
+                        <Button fx:id="ddd" mnemonicParsing="false" onAction="#afficherdeal" style="-fx-background-color: Blue;" text="Deal" textFill="WHITE" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="enseigne" mnemonicParsing="false" onAction="#afficherEnseigne">
+                     <graphic>
+                        <Button fx:id="cc1" mnemonicParsing="false" onAction="#afficherEnseigne" style="-fx-background-color: Blue;" text="Enseigne" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+                  <Menu fx:id="Reservation" mnemonicParsing="false" onAction="#reservation">
+                     <graphic>
+                        <Button fx:id="rr" mnemonicParsing="false" onAction="#reservation" style="-fx-background-color: Blue;" text="Reservation" textFill="#ffffffbf" />
+                     </graphic>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="278.0" layoutY="49.0" text="Nom" />
+                  <Label layoutX="272.0" layoutY="160.0" text="Score" />
+                  <Label layoutX="281.0" layoutY="92.0" text="Prix" />
+                  <Label layoutX="259.0" layoutY="229.0" text="Date Fin" />
+                  <Label layoutX="241.0" layoutY="272.0" prefHeight="17.0" prefWidth="61.0" text="Description" />
+                  <Label layoutX="207.0" layoutY="125.0" prefHeight="17.0" prefWidth="104.0" text="Taux de reduction" />
+                  <Label layoutX="241.0" layoutY="194.0" text="Date Debut" />
+                  <TextField fx:id="nomd" layoutX="348.0" layoutY="45.0" />
+                  <TextField fx:id="scored" layoutX="349.0" layoutY="156.0" />
+                  <TextField fx:id="prixd" layoutX="349.0" layoutY="85.0" />
+                  <TextField fx:id="tredd" layoutX="349.0" layoutY="120.0" />
+                  <DatePicker fx:id="datedd" layoutX="348.0" layoutY="190.0" />
+                  <DatePicker fx:id="datefd" layoutX="347.0" layoutY="225.0" />
+                  <TextArea fx:id="descriptiond" layoutX="347.0" layoutY="265.0" prefHeight="70.0" prefWidth="200.0" />
+                  <Button fx:id="modifiererd" layoutX="408.0" layoutY="368.0" mnemonicParsing="false" onAction="#ModifierDeal" text="Ajouter" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
